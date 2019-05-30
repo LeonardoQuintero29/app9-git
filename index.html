@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+ <title>Reproductor de Audio</title>
+ 
+    <!--grupo JavaScript-->
+    <link rel="stylesheet" href="css/index_style.css">
+    <script src="phonegap.js"></script>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+    
+    <!--grupo CSS-->
+    <link rel="stylesheet" href="css/style.css" media="screen">
+ </head>
+ 
+<body bgcolor="#2A2A2A" text="#FFFFFF" alink="#FF0000" link="#FF0000" vlink="#FF0000">
+
+
+<style type="text/css">
+	.ul {
+	display: block;
+	float: left;
+	list-style: none;
+	}
+	.ul_li{
+	float: left;
+	margin: 10px;
+	padding: 2px;
+	}
+
+	.ul_a{
+	color: #F3F3F3;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 1px 1px #FF4584;
+		
+	}
+		
+	.bg-inverse{
+			
+	background-color: #FF2040;
+		
+	}
+		
+	.bg-primary{
+			
+	transition: all 1s ease;	
+			
+	}
+		
+	.celdas{
+			
+	align-content: center;
+	font-family: "Century Gothic";
+	color: transparent;
+	background: linear-gradient(to right, aqua, pink);
+	
+	-webkit-background-clip: text;		
+			
+			
+	}
+	
+	.filas{
+			
+	align-content: center;
+	font-family: "Century Gothic";
+	color: transparent;
+	background: linear-gradient(to right, white, orange);
+	
+	-webkit-background-clip: text;					
+		
+	}
+
+
+</style>
+	
+	
+
+	<header>
+		<nav>
+			
+			</ul>
+				
+			<a href="Index.html"><img id="logo" src="pictures/logo.jpg" width="250" height="250"></a>
+            
+			</ul>
+            
+			
+		</nav>
+	</header>
+
+	<section id="banner">
+	
+	</section>
+	
+	
+	<section id="body">
+		
+	</section>
+	
+	<div id="contenedor-cuerpo">
+
+
+<!--
+<div data-role="header" align="center">
+<h1>Reproductor mp3</h1>
+</div>
+-->
+
+<div id="container">
+	<div id="audio-image">
+		<img class="cover" />
+	</div>
+	<div id="audio-player">
+		<div id="audio-info">
+			<span class="artist"></span> - <span class="title"></span>
+		</div>
+		 <input id="volume" type="range" min="0" max="10" value="5" />
+		 <br>
+		 <div id="buttons">
+		 <span>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <ul id="playlist" class="hidden">
+         <li song="LinkiPark.mp3" cover="linkin park1.jpg" artist="Linkin Park">In the end.mp3</li>
+			<li song="Austin Mahone - Mmm Yeah ft. Pitbull.mp3" cover="austin mahone1.jpg" artist="Austin Mahone">Mmm Yeah ft. Pitbull.mp3</li>
+			<li song="Avicii - Wake Me Up.mp3" cover="aviicii1.jpg" artist="Aviicii">Wake Me Up.mp3</li>
+			<li song="Charlie Puth - We dont talk anymore feat selena gomez.mp3" cover="charlie puth1.jpg" artist="Charlie Puth">We dont talk anymore feat selena gomez.mp3</li>
+			<li song="Coldplay - The Scientist.mp3" cover="coldplay1.jpg" artist="Coldplay">The Scientist.mp3</li>
+			<li song="Justin Bieber  BloodPop - Friends.mp3" cover="justin bieber1.jpg" artist="Justin Bieber">Friends.mp3</li>
+			<li song="Marshmello - Alone.mp3" cover="marshmello1.jpg" artist="Marshmello">Alone.mp3</li>
+			<li song="Martin Garrix & Bebe Rexha - In The Name Of Love.mp3" cover="martin garrix1.jpg" artist="Martin Garrix">In The Name Of Love.mp3</li>
+			<li song="Wolves.mp3" cover="selena gomez1.jpg" artist="Selena Gomez">Wolves.mp3</li>
+			<li song="SKRILLEX - Scary Monsters And Nice Sprites.mp3" cover="skrillex1.jpg" artist="Skrillex">Scary Monsters And Nice Sprites.mp3</li>
+			<li song="Taylor Swift - Look What You Made Me Do.mp3" cover="taylor swift1.jpg" artist="Taylor Swift">Look What You Made Me Do.mp3</li>
+			<li song="David Guetta feat. Ne-Yo & Akon - Play Hard.mp3" cover="david guetta1.jpg" artist="David Guetta">Play Hard.mp3</li>
+		</ul>
+	</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</div>
+
+ </div>
+
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+     <h2>Leonardo Quinterio Barron</h2>
+     <br>
+       <img src="res/android/mdpi.png" width="128" height="128">
+ </div>
+
+</body>
+</html>
